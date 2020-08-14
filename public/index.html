@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Coding Bootcamp Testimonials Slider</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      @media screen and (min-width: 768px) {
+        #content {
+          background-position: 16% -3%;
+        }
+      }
+    </style>
+  </head>
+  <body
+    class="font-inter lg:flex lg:flex-row-reverse lg:h-screen lg:items-center"
+  >
+    <!-- imageProfile -->
+    <div
+      class="p-8 pb-6 m-4 bg-contain bg-no-repeat bg-center relative lg:w-1/2 lg:p-20 lg:mr-16"
+      style="background-image: url('/images/pattern-bg.svg');"
+    >
+      <img
+        id="imageProfile"
+        alt="image-tanya"
+        class="mx-auto w-64 rounded-lg shadow-2xl lg:w-auto"
+      />
+      <div class="absolute bg-white rounded-full -mt-5 ml-24 lg:ml-16">
+        <!-- prev button -->
+        <button id="prev" class="p-3 lg:p-4 focus:outline-none">
+          <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg">
+            <path
+              fill="none"
+              stroke="#8585AC"
+              stroke-width="3"
+              d="M11 1L3 9l8 8"
+            />
+          </svg>
+        </button>
+        <!-- next button -->
+        <button id="next" class="p-3 lg:p-4 focus:outline-none">
+          <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg">
+            <path
+              fill="none"
+              stroke="#8585AC"
+              stroke-width="3"
+              d="M2 1l8 8-8 8"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <!-- text -->
+    <div
+      class="mx-auto text-center pt-4 pb-16 px-8 bg-no-repeat bg-left-bottom lg:w-1/2 lg:h-full"
+      style="
+        background-image: url('/images/pattern-curve.svg');
+        background-size: 75%;
+      "
+    >
+      <!-- isiTestimonials -->
+      <div
+        id="content"
+        class="pt-4 bg-no-repeat bg-top lg:text-left lg:absolute lg:w-1/2 lg:ml-40 lg:pr-16 lg:mt-40 lg:pt-12"
+        style="
+          background-image: url('/images/pattern-quotes.svg');
+          background-size: 16%;
+        "
+      >
+        <p
+          id="opinion"
+          class="font-light text-dark-blue text-lg lg:text-3xl lg:mb-8"
+        ></p>
+        <span
+          id="authorName"
+          class="font-bold block mt-4 text-dark-blue lg:inline"
+        >
+        </span>
+        <span id="authorRole" class="font-light text-grayish-blue"></span>
+      </div>
+    </div>
+  </body>
+  <script src="main.js"></script>
+</html>
